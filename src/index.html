@@ -6,6 +6,7 @@
 <meta name="robots" content="noindex,nofollow,noarchive">
 <title>LeanLoop – Prawo i Podatki | Gdańsk Jasień i online</title>
 <meta name="description" content="Prawo i księgowość dla małych firm w jednym miejscu. Gdańsk Jasień i online. Pierwsza konsultacja -50%.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f6f1ea;--bg2:#ece3d6;--ink:#2e241c;--muted:#6b5a4b;--brown:#7a5638;--green:#1f4d3a;--line:#d9ccb9;--s:clamp(3rem,7vw,5.5rem)}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
@@ -89,7 +90,18 @@ h3{line-height:1.25}p{margin:0 0 1rem}p:last-child{margin-bottom:0}
 .person{gap:1.5rem}.contact{gap:1.5rem 2rem}.note{margin-top:1.5rem}
 footer{padding:3rem 0}footer p{margin:0 0 .5rem}
 @media(max-width:820px){.grid,.steps{gap:1rem}.card{padding:1.5rem}}
-/* wiktoria 29.10 */@media(max-width:820px){.why{gap:1rem}.why div{padding:1.5rem}}.why div{border:1px solid #b8964f;box-shadow:inset 0 0 0 4px #fbf8f3,inset 0 0 0 5px #d8c08a;background:#fbf8f3;border-radius:2px;padding:1.75rem}.why h3{color:var(--green)}
+/* wiktoria 29.10 *//* styl domu: roz, braz, butelkowa zielen, zloto */
+:root{--bg:#f9efed;--bg2:#f1dfdc;--ink:#3a281e;--muted:#6e5446;--brown:#6b4630;--green:#1d4a36;--gold:#b8964f;--line:#e2cfc3}
+h1,h2,h3,.logo{font-family:"Playfair Display",Georgia,serif;letter-spacing:.005em}
+h2{color:var(--green)}
+.card,.why div,.steps li{background:#fffaf8;border:1px solid var(--gold);border-radius:3px;box-shadow:inset 0 0 0 4px #fffaf8,inset 0 0 0 5px rgba(184,150,79,.55),0 1px 0 rgba(107,70,48,.08);position:relative}
+.alt .card,.alt .why div,.alt .steps li{border-color:var(--green);box-shadow:inset 0 0 0 4px #fffaf8,inset 0 0 0 5px var(--gold)}
+.card::before,.card::after,.why div::before,.why div::after{content:"";position:absolute;width:14px;height:14px;border:2px solid var(--gold);pointer-events:none}
+.card::before,.why div::before{top:9px;left:9px;border-right:0;border-bottom:0}
+.card::after,.why div::after{bottom:9px;right:9px;border-left:0;border-top:0}
+.card.media picture img{border-radius:2px}
+.why h3{color:var(--green)}
+@media(max-width:820px){.why{gap:1rem}.why div{padding:1.5rem}}.why div{border:1px solid #b8964f;box-shadow:inset 0 0 0 4px #fbf8f3,inset 0 0 0 5px #d8c08a;background:#fbf8f3;border-radius:2px;padding:1.75rem}.why h3{color:var(--green)}
 </style>
 </head>
 <body><header><div class="wrap">
