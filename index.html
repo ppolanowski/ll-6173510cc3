@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow,noarchive">
 <title>LeanLoop – Prawo i Podatki | Gdańsk Jasień i online</title>
 <meta name="description" content="Prawo i księgowość dla małych firm w jednym miejscu. Gdańsk Jasień i online. Pierwsza konsultacja -50%.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#f6f1ea;--bg2:#ece3d6;--ink:#2e241c;--muted:#6b5a4b;--brown:#7a5638;--green:#1f4d3a;--line:#d9ccb9;--s:clamp(3rem,7vw,5.5rem)}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
@@ -110,6 +110,38 @@ h2{color:var(--green)}
 .steps li.step-media{display:flex;flex-direction:column}.steps li.step-media::before{order:0}.steps li.step-media picture{order:-1}
 .steps li.step-media{padding-top:0!important}.steps li.step-media picture img{width:calc(100% + 3rem)!important;max-width:none;margin:0 -1.5rem 1.5rem!important;height:12rem!important;border-radius:0!important}
 /* kroki: cyfra obok tekstu */.steps li,.steps li.step-media{display:grid!important;grid-template-columns:auto 1fr;column-gap:1rem;align-items:start}.steps li::before{grid-column:1;margin:0!important;line-height:1.1}.steps li>span{grid-column:2}.steps li.step-media picture{grid-column:1/-1;grid-row:1}.steps li.step-media::before{grid-row:2}.steps li.step-media>span{grid-row:2}
+/* wiktoria 29.10 13:01: spojnosc, styl nowoczesno-staromodny */
+body{font-family:Lora,Georgia,serif;font-size:17px;line-height:1.65}
+h1,h2,h3,.logo,header nav li a{font-family:"Cormorant Garamond",Georgia,serif!important;font-weight:600;letter-spacing:0}
+h1{font-size:clamp(2.5rem,6vw,4.1rem)!important;line-height:1.05!important;color:var(--green)}
+h2{font-size:clamp(2.1rem,4.2vw,2.9rem)}h3,.card h3{font-size:1.5rem}.why h3{font-size:1.35rem}
+.logo{font-size:1.6rem;font-weight:700}.logo small,.kicker,.tag{font-family:"Cormorant Garamond",Georgia,serif;font-variant:small-caps;text-transform:lowercase;letter-spacing:.08em;font-weight:600}
+.logo small{font-size:.95rem;color:var(--brown)}.kicker{font-size:1.15rem;color:var(--brown)}.tag{font-size:1.05rem;color:var(--brown)}
+.steps li::before{font-family:"Cormorant Garamond",Georgia,serif!important;font-size:2.2rem!important;color:var(--gold)!important}
+header{border-bottom:1px solid var(--gold)}
+.btn{border-radius:2px;background:var(--green);box-shadow:inset 0 0 0 3px var(--green),inset 0 0 0 4px var(--gold);padding:.85rem 1.5rem;font-weight:500;letter-spacing:.02em}
+.btn:hover{background:#163a2b;box-shadow:inset 0 0 0 3px #163a2b,inset 0 0 0 4px var(--gold)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--gold);box-shadow:none}.btn.ghost:hover{background:#fffaf8}
+.hero-img::after{display:none}
+.hero-img picture{display:block;border:22px solid transparent;border-image:url(img/rama.webp) 48 round;box-shadow:0 6px 18px rgba(58,40,30,.12)}
+.hero-img img{border-radius:0!important;display:block}
+.hero p{color:var(--ink)}.badge{border-left:3px solid var(--gold)}
+.price{border:22px solid transparent;border-image:url(img/rama.webp) 48 round;background:#fffaf8;background-clip:padding-box;border-radius:0;box-shadow:0 6px 18px rgba(58,40,30,.12);border-collapse:separate;border-spacing:0}
+.price td{padding:1.05rem 1.5rem;border-bottom:1px dotted var(--gold)}.price tr:last-child td{border-bottom:0}
+.price td:last-child{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.3rem;font-weight:600}
+.price tr.hl{background:#f6ecd6}
+.slot{border-color:var(--gold)!important;border-radius:2px}
+.photo img{border-radius:0!important;outline:1px solid var(--gold);outline-offset:4px}
+footer{border-top:3px solid var(--gold)}
+@media(max-width:820px){.hero-img picture,.price{border-width:16px}.price td{padding:.9rem 1rem}}
+.price,.steps li::before,h1,h2,h3{font-variant-numeric:lining-nums}.price td:last-child{font-variant-numeric:lining-nums tabular-nums}
+.price{max-width:52rem}.price td{border-bottom-color:rgba(184,150,79,.7)}
+@media(max-width:820px){.price td:last-child{white-space:nowrap!important;font-size:1.15rem;vertical-align:middle}.price td{padding:.9rem .85rem}.cta .btn{flex:1 1 100%;text-align:center}}
+header{background:rgba(249,239,237,.96)}
+@media(min-width:821px){header nav li a{font-family:Lora,Georgia,serif!important;font-weight:400;font-size:.95rem}}
+@media(max-width:640px){.price tr{display:block;border-bottom:1px dotted rgba(184,150,79,.7)}.price tr:last-child{border-bottom:0}.price td{display:block;border:0!important;text-align:left!important}.price td:first-child{padding-bottom:.15rem}.price td:last-child{padding-top:0;white-space:normal!important}.price tbody{display:block}}
+.steps li>span>strong:first-child{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.3rem;font-weight:600;color:var(--green);line-height:1.2;margin-bottom:.25rem}
+.steps li>span>strong:first-child+br{display:none}
 </style>
 </head>
 <body><header><div class="wrap">
