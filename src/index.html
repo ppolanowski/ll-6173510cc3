@@ -150,6 +150,24 @@ button,input,select,textarea{font:inherit}
 .credits{font-size:.8125rem;opacity:.8}
 p,li{text-wrap:pretty}h1,h2,h3{text-wrap:balance}
 /* wiktoria: cennik bez ksiegowosci */
+
+/* tradycja 29.10: kancelaria z tradycja */
+body{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .28 0 0 0 0 .19 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");counter-reset:sek}
+section.alt{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .28 0 0 0 0 .19 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+section:not(.hero):not(.band):not(#prywatnosc){counter-increment:sek}
+section:not(.hero):not(.band):not(#prywatnosc) h2::before{content:"— " counter(sek,upper-roman) " —";display:block;font:600 1.2rem/1 "Cormorant Garamond",serif;letter-spacing:.35em;color:var(--gold);margin-bottom:.55rem}
+section:not(.hero):not(.band) h2::after{content:"";display:block;width:220px;max-width:70%;height:18px;margin:.7rem 0 .3rem;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='18' viewBox='0 0 220 18'%3E%3Cg fill='none' stroke='%23b8964f' stroke-width='1'%3E%3Cpath d='M0 9H88M132 9H220M0 12H80M140 12H220' /%3E%3Cpath d='M92 9c6-7 12-7 18 0c6 7 12 7 18 0c-6-7-12-7-18 0c-6 7-12 7-18 0z'/%3E%3C/g%3E%3Cpath d='M110 4l5 5-5 5-5-5z' fill='%23b8964f'/%3E%3C/svg%3E") left center/contain no-repeat}
+h2{font-variant-caps:small-caps;letter-spacing:.03em}
+.hero h1+p::first-letter{float:left;font:700 3.9em/.82 "Cormorant Garamond",serif;color:var(--green);margin:.06em .1em 0 0;padding-right:.04em}
+header{border-bottom:3px double var(--gold)!important}
+footer{border-top:4px double var(--gold)!important;text-align:center}
+footer::before{content:"";display:block;width:220px;height:18px;margin:0 auto 1.2rem;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='18' viewBox='0 0 220 18'%3E%3Cg fill='none' stroke='%23b8964f' stroke-width='1'%3E%3Cpath d='M0 9H88M132 9H220M0 12H80M140 12H220' /%3E%3Cpath d='M92 9c6-7 12-7 18 0c6 7 12 7 18 0c-6-7-12-7-18 0c-6 7-12 7-18 0z'/%3E%3C/g%3E%3Cpath d='M110 4l5 5-5 5-5-5z' fill='%23b8964f'/%3E%3C/svg%3E") center/contain no-repeat;filter:brightness(1.25)}
+table.price td{border-bottom:1px dotted rgba(184,150,79,.6)}
+table.price{border-top:3px double var(--gold);border-bottom:3px double var(--gold)}
+.kicker{font-variant-caps:all-small-caps;text-transform:none;letter-spacing:.14em}
+.steps li::before{content:counter(s,upper-roman)!important;font-size:1.7rem!important}
+section:not(.hero):not(.band) h2::after{margin-bottom:1.6rem}
+section:not(.hero):not(.band) h2+.lead{margin-top:-.6rem}
 </style>
 </head>
 <body><header><div class="wrap">
