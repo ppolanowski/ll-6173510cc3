@@ -204,6 +204,44 @@ table.price{border:22px solid transparent!important;border-image:url(img/rama.we
 @media(max-width:640px){.price tr{display:flex!important;justify-content:space-between;align-items:baseline;gap:.75rem;padding:.9rem .5rem}.price td{display:block;padding:0!important;font-size:1rem!important}.price td:first-child{padding:0!important;flex:1 1 auto}.price td:last-child{flex:0 0 auto;text-align:right!important;white-space:nowrap!important;font-size:1rem!important}}
 .person .tag{display:inline-block;color:var(--green);font-size:1.2rem!important;letter-spacing:.09em!important;padding-bottom:.45rem;margin:0 0 .9rem!important;border-bottom:1px solid var(--gold)}.person p{font-size:.95rem;line-height:1.65;color:#5c4a40}
 </style>
+<style id="w1311">
+/* wiktoria 13.11: zespol ze wspolnym zdjeciem, cennik 3 kolumny, prawo 2 kolumny */
+.team{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:1.5rem;align-items:stretch;max-width:66rem;margin-inline:auto}
+.team-photo{margin:0;display:flex;flex-direction:column;border:22px solid transparent;border-image:url(img/rama.webp?v=2) 48 round;background:#fffaf8;background-clip:padding-box}
+.team-photo picture{flex:1 1 auto;display:block;min-height:0;position:relative}
+.team-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+.team-photo figcaption{padding:.7rem 1rem .75rem;text-align:center;font:600 1.1rem/1.2 "Cormorant Garamond",Georgia,serif;font-variant-caps:all-small-caps;letter-spacing:.12em;color:var(--brown);border-top:1px solid var(--gold)}
+.team-list{display:grid;gap:1.5rem;grid-template-rows:auto auto;align-content:stretch}
+.team .card.person{display:block;padding:1.75rem 2rem}
+.team .person h3{font-size:1.7rem}
+.team-list,.team-list>*,.team>*{min-width:0}
+.team .person p.spec{font-style:italic;color:var(--ink);margin:0 0 .65rem;font-size:1rem}
+@media(max-width:860px){.team{grid-template-columns:1fr;max-width:34rem}.team-photo picture{aspect-ratio:4/5;flex:none}.team .card.person{padding:1.5rem}}
+@media(max-width:820px){.team-photo{border-width:16px}.team,.team-list{gap:1rem}}
+@media(max-width:640px){.team .person h3,.team .person p{text-align:left}.team .card.person{text-align:left}}
+.card ul.two{display:grid;grid-template-rows:repeat(5,auto);grid-auto-flow:column;grid-template-columns:auto auto;justify-content:space-between;column-gap:1rem;row-gap:.375rem}.card ul.two li{margin:0}
+@media(max-width:520px){.card ul.two{display:block}.card ul.two li{margin:.375rem 0}.card ul.two li:last-child{margin-bottom:0}}
+#uslugi .card h3{margin:0 0 1rem;padding-bottom:.6rem;color:var(--green);border-bottom:1px solid var(--gold)}
+.contact .card{justify-content:center}.contact .card>a{margin-top:0;padding-top:.35rem}
+.steps li,.steps li.step-media{align-content:start}
+.cennik tbody th{text-wrap:balance}
+.steps a,.note a{color:var(--green);text-underline-offset:.18em;text-decoration-thickness:1px}
+table.cennik{width:100%;max-width:60rem;margin-inline:auto;border:22px solid transparent;border-image:url(img/rama.webp?v=2) 48 round;background:#fffaf8;background-clip:padding-box;border-collapse:separate;border-spacing:0;font-variant-numeric:lining-nums}
+.cennik th,.cennik td{padding:1.05rem 1.5rem;text-align:left;vertical-align:baseline;border-bottom:1px dotted rgba(184,150,79,.7)}
+.cennik tbody tr:last-child>*{border-bottom:0}
+.cennik thead th{font:600 1.1rem/1.2 "Cormorant Garamond",Georgia,serif;font-variant-caps:all-small-caps;letter-spacing:.12em;color:var(--brown);border-bottom:1px solid var(--gold);padding-block:.85rem}
+.cennik tbody th{font-weight:600;width:35%}.cennik tbody th span{font-weight:400;color:var(--muted);white-space:nowrap}
+.cennik td.c{font:600 1.35rem/1.2 "Cormorant Garamond",Georgia,serif;font-variant-numeric:lining-nums tabular-nums;white-space:nowrap;color:var(--green)}
+.cennik td.c s{font-weight:500;font-size:1.1rem;color:var(--muted);margin-right:.2em}
+.cennik td.z{font-size:.95rem;line-height:1.6;color:#5c4a40}
+.cennik tr.hl>*{background:#f6ecd6}
+@media(max-width:820px){table.cennik{border-width:16px}}
+@media(max-width:760px){.cennik thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.cennik,.cennik tbody{display:block}.cennik tr{display:flex;flex-wrap:wrap;column-gap:1rem;row-gap:.35rem;align-items:baseline;padding:1.1rem 1.1rem;border-bottom:1px dotted rgba(184,150,79,.7)}
+.cennik tbody tr:last-child{border-bottom:0}.cennik tr.hl{background:#f6ecd6}.cennik tr.hl>*{background:none}
+.cennik th,.cennik td{display:block;padding:0;border:0;width:auto}.cennik tbody th{flex:1 1 0;min-width:0;text-wrap:wrap}.cennik td.z{flex:0 0 100%}.cennik td.c{flex:none;text-align:right;font-size:1.25rem}}
+.team .person .tag{line-height:1.45;text-wrap:balance}.nb{white-space:nowrap}#uslugi .card li:first-child{margin-top:0}.card ul.two{column-gap:.5rem}
+</style>
 </head>
 <body><header><div class="wrap">
 <a class="logo" href="#top">Lean<span>Loop</span><small>Prawo i Podatki</small></a>
@@ -217,7 +255,7 @@ table.price{border:22px solid transparent!important;border-image:url(img/rama.we
 <h1>Razem Lepiej</h1>
 <p><strong>Cześć!</strong></p>
 <p>Jesteśmy prawniczką i księgową pod jednym szyldem. Wierzymy, że prowadzenie firmy nie musi wiązać się z nieświadomością i niezrozumieniem potrzeb – zwłaszcza gdy stawiasz czoła nowym wyzwaniom.</p>
-<p>My chcemy być partnerem, na którym możesz polegać każdego dnia, porozmawiać wprost i otrzymać sposób na proste prawo i podatki.</p>
+<p>My jesteśmy partnerem, na którym możesz polegać każdego dnia, porozmawiać wprost i otrzymać sposób na proste prawo i podatki.</p>
 <div class="cta"><a class="btn" href="#rezerwacja">Umów konsultację</a><a class="btn ghost" href="#uslugi">Zobacz usługi</a></div>
 <div class="badge"><strong>Pierwsza konsultacja -50%</strong> – poznajmy się i sprawdźmy, czy możemy pomóc.</div>
 </div></div></section>
@@ -225,21 +263,21 @@ table.price{border:22px solid transparent!important;border-image:url(img/rama.we
 <section id="uslugi" class="alt"><div class="wrap">
 <h2>W czym pomagamy</h2>
 <div class="grid g2">
-<div class="card media"><div><div class="tag">Prawo</div><ul>
-<li>Prawo cywilne</li><li>Prawo autorskie</li><li>Najem</li><li>Media społecznościowe</li><li>Ochrona danych osobowych</li></ul></div></div>
-<div class="card media"><div><div class="tag">Księgowość</div><ul>
-<li>Prowadzenie księgowości</li><li>VAT, JPK, deklaracje</li><li>Kadry i płace</li><li>Doradztwo podatkowe</li></ul></div></div>
-<div class="card"><div class="tag">Start-upy</div><ul>
+<div class="card"><h3>Prawo</h3><ul class="two">
+<li>Prawo cywilne</li><li>Prawo autorskie</li><li>Najem</li><li>Media społecznościowe</li><li>Ochrona danych (RODO)</li><li>Odszkodowania</li><li>AI Act</li><li>Sygnaliści</li><li>GPSR</li><li>PPWR</li></ul></div>
+<div class="card"><h3>Księgowość</h3><ul>
+<li>Prowadzenie księgowości</li><li>VAT, JPK, deklaracje</li><li>Kadry i płace</li><li>Doradztwo podatkowe</li></ul></div>
+<div class="card"><h3>Start-upy</h3><ul>
 <li>Doradztwo przy starcie biznesu</li><li>Uporządkowanie procesów</li><li>Prowadzenie projektów</li><li>Umowy wspólników i z inwestorami</li></ul></div>
-<div class="card"><div class="tag">Spółki</div><ul>
+<div class="card"><h3>Spółki</h3><ul>
 <li>Zakładanie spółek</li><li>Zmiany w umowie spółki i KRS</li><li>Bieżąca obsługa spółek</li></ul></div>
 </div></div></section>
 
 <section><div class="wrap">
 <h2>Dlaczego LeanLoop</h2>
 <div class="why">
-<div><h3>Prawnik i księgowa razem</h3><p>Jedna rozmowa zamiast dwóch biur. Widzimy sprawę z obu stron.</p></div>
-<div><h3>Duże doświadczenie księgowe</h3><p>Prowadzimy księgowość firm <span class="demo k">od ponad 15 lat</span>.</p></div>
+<div><h3>Prawnik, Ekspertka ds. Optymalizacji, <span class="nb">Start-upów</span> i Księgowa razem</h3><p>Jedna rozmowa zamiast dwóch biur. Widzimy sprawę z obu stron.</p></div>
+<div><h3>Duże doświadczenie księgowe</h3><p>Prowadzimy księgowość firm od ponad 25 lat, a sprawy prawne od 15 lat.</p></div>
 <div><h3>Blisko Ciebie</h3><p>Jasień i okolice – albo online.</p></div>
 <div><h3>Szczerze i od serca</h3><p>Normalna atmosfera i jasna informacja, co jest potrzebne, a co nie.</p></div>
 </div></div></section>
@@ -247,7 +285,7 @@ table.price{border:22px solid transparent!important;border-image:url(img/rama.we
 <section class="alt"><div class="wrap">
 <div><div><h2>Jak pracujemy</h2></div></div>
 <ol class="steps">
-<li class="step-media"><span><strong>Rezerwujesz termin</strong><br>Online, w wygodnej godzinie.</span></li>
+<li class="step-media"><span><strong>Rezerwujesz termin</strong><br><a href="#rezerwacja">W kalendarzu</a>, który jest niżej.</span></li>
 <li><span><strong>Konsultacja</strong><br>Opowiadasz o sprawie, my zadajemy pytania.</span></li>
 <li><span><strong>Jasna wycena</strong><br>Wiesz z góry, ile to kosztuje.</span></li>
 <li><span><strong>Załatwiamy</strong><br>I zostajemy pod telefonem.</span></li>
@@ -257,31 +295,38 @@ table.price{border:22px solid transparent!important;border-image:url(img/rama.we
 
 <section id="zespol"><div class="wrap">
 <h2>Zespół</h2>
-<div class="grid">
-<div class="card person"><picture class="photo"><source type="image/avif" srcset="img/wiktoria-480.avif"><img src="img/wiktoria-480.webp" width="480" height="600" alt="Wiktoria Szachta, prawniczka (zdjęcie przykładowe)" loading="lazy" decoding="async"></picture><div><h3>Wiktoria Szachta</h3><div class="tag">Prawnik</div><p>Doradztwo prawne, start-upy, projekty i procesy. <span class="demo">Absolwentka prawa Uniwersytetu Gdańskiego. Od 8 lat pomaga twórcom i małym firmom pisać umowy, które naprawdę chronią. Mówi prosto, bez prawniczego żargonu.</span></p></div></div>
-<div class="card person"><picture class="photo"><source type="image/avif" srcset="img/ewa-480.avif"><img src="img/ewa-480.webp" width="480" height="600" alt="Ewa Szachta, księgowa (zdjęcie przykładowe)" loading="lazy" decoding="async"></picture><div><h3>Ewa Szachta</h3><div class="tag">Księgowość i podatki</div><p>Prawo spółek handlowych, księgowość i podatki. <span class="demo">Księgowa z certyfikatem Ministerstwa Finansów, od 15 lat prowadzi biuro rachunkowe. Obsługuje jednoosobowe firmy i spółki z o.o. Pilnuje terminów, żebyś Ty nie musiał.</span></p></div></div>
-</div></div></section>
+<div class="team">
+<figure class="team-photo"><picture><source type="image/avif" srcset="img/zespol-756.avif"><img src="img/zespol-756.webp" width="756" height="1008" alt="Wiktoria Szachta (po lewej) i Ewa Szachta (po prawej)" loading="lazy" decoding="async"></picture><figcaption>Od lewej: Wiktoria i Ewa Szachta</figcaption></figure>
+<div class="team-list">
+<div class="card person"><div><h3>Wiktoria Szachta</h3><div class="tag">Prawniczka i Ekspertka ds. Optymalizacji i <span class="nb">Start-upów</span></div><p class="spec">Doradztwo prawno-biznesowe, prawa twórców, nieruchomościowe, odszkodowania, start-upy, projekty i optymalizacje.</p><p>Jestem absolwentką prawa Uniwersytetu Gdańskiego. Od 6 lat zajmuję się przygotowywaniem umów i dokumentów prawno-biznesowych dla wynajmujących, twórców treści oraz małych i większych firm. Uwielbiam optymalizować procesy i prowadzić złożone projekty oraz sprawy odszkodowawcze, nieruchomościowe, cywilne i autorskie. Mówię jasno, co możemy uzyskać i co jesteśmy w stanie zrobić – prosto, bez prawniczego żargonu.</p></div></div>
+<div class="card person"><div><h3>Ewa Szachta</h3><div class="tag">Prawniczka i Księgowa w jednym</div><p class="spec">Prawo spółek handlowych, prawo pracy, księgowość i podatki.</p><p>Jestem prawniczką oraz księgową z certyfikatem Ministerstwa Finansów. Od 25 lat prowadzę biuro rachunkowe, a od 15 lat zajmuję się złożonymi sprawami prawnymi z zakresu podatków, spółek handlowych oraz prawa pracy. Prowadzę również sprawy firm dla osób z Ukrainy.</p></div></div>
+</div></div>
+</div></section>
 
 <section id="cennik" class="alt"><div class="wrap">
 <h2>Cennik</h2>
 <p class="lead">Ceny orientacyjne. Dokładną wycenę dostajesz po konsultacji – zanim cokolwiek zaczniemy.</p>
-<table class="price">
-<tr class="hl"><td><strong>Pierwsza konsultacja</strong> (<span class="demo k">60 min</span>)</td><td><s><span class="demo k">400 zł</span></s> <strong>-50%</strong></td></tr>
-<tr><td>Kolejna konsultacja</td><td><span class="demo k">300 zł</span></td></tr>
-<tr><td>Przygotowanie / analiza umowy</td><td>od <span class="demo k">500 zł</span></td></tr>
-</table>
-<p class="note">Ceny netto, doliczamy 23% VAT. Konsultacja z rabatem: <span class="demo k">200 zł</span>.</p>
+<table class="cennik">
+<thead><tr><th scope="col">Usługa</th><th scope="col">Cena</th><th scope="col">Zakres / warunki</th></tr></thead>
+<tbody>
+<tr class="hl"><th scope="row">Pierwsza konsultacja <span>(diagnoza)</span></th><td class="c"><s>400 zł</s> <strong>200 zł</strong></td><td class="z">60 min. Zniżka 50% na start – analiza sytuacji i plan działania.</td></tr>
+<tr><th scope="row">Kolejna konsultacja</th><td class="c">300 zł</td><td class="z">60 min. Bieżące doradztwo prawne lub podatkowe.</td></tr>
+<tr><th scope="row">Konsultacja 2w1 <span>(Prawo + Podatki)</span></th><td class="c">550 zł</td><td class="z">60 min. Wspólna analiza Wiktorii i Ewy dla firm i spółek.</td></tr>
+<tr><th scope="row">Weryfikacja dokumentacji&nbsp;AI</th><td class="c">od 300 zł</td><td class="z">Analiza i naprawa umowy lub dokumentu przyniesionego przez klienta: korekta błędów i halucynacji AI, zabezpieczenie interesów, weryfikacja pod kątem AI Act.</td></tr>
+<tr><th scope="row">Przygotowanie&nbsp;/ analiza umowy</th><td class="c">od 500 zł</td><td class="z">Wycena po 15-minutowym przeglądzie. W cenie 1 tura poprawek.</td></tr>
+</tbody></table>
+<p class="note">Ceny netto, doliczamy 23% VAT.</p>
 </div></section>
 
 <section id="rezerwacja"><div class="wrap">
 <h2>Umów konsultację</h2>
 <p class="lead">Wybierz termin w kalendarzu. Pierwsza konsultacja – 50% taniej.</p>
-<div class="card" style="text-align:center;padding:3rem 1rem"><p><strong>Najbliższe wolne terminy</strong> <span class="demo k">(przykład)</span></p><div class="slots demo"><a class="slot" href="tel:+48721611061">Pn 10:00</a><a class="slot" href="tel:+48721611061">Pn 14:00</a><a class="slot" href="tel:+48721611061">Wt 11:00</a><a class="slot" href="tel:+48721611061">Śr 16:00</a><a class="slot" href="tel:+48721611061">Czw 10:30</a><a class="slot" href="tel:+48721611061">Pt 12:00</a></div><p class="note">Na razie: zadzwoń, numery niżej.</p></div>
+<div class="card" style="text-align:center;padding:3rem 1rem"><p><strong>Najbliższe wolne terminy</strong></p><div class="slots demo"><a class="slot" href="tel:+48721611061">Pn 10:00</a><a class="slot" href="tel:+48721611061">Pn 14:00</a><a class="slot" href="tel:+48721611061">Wt 11:00</a><a class="slot" href="tel:+48721611061">Śr 16:00</a><a class="slot" href="tel:+48721611061">Czw 10:30</a><a class="slot" href="tel:+48721611061">Pt 12:00</a></div><p class="note">Na razie: zadzwoń, numery niżej.</p></div>
 </div></section>
 
 <section id="blog" class="alt"><div class="wrap">
 <h2>Blog: krótko o prawie i podatkach</h2>
-<p class="lead">Krótko i po ludzku o prawie i podatkach w małej firmie.</p>
+<p class="lead">Praktyczne wskazówki dla małej firmy – po ludzku, bez żargonu.</p>
 <div class="grid">
 <div class="card"><div class="tag">Podatki</div><h3>Ryczałt czy skala? Jak wybrać formę opodatkowania</h3><p class="note"><span class="demo">Ryczałt bywa tańszy, ale nie zawsze. Pokazujemy na trzech przykładach, kiedy skala podatkowa wygrywa.</span></p><a class="more" href="#blog">Czytaj →</a></div>
 <div class="card"><div class="tag">Najem</div><h3>Umowa najmu: 5 zapisów, które chronią wynajmującego</h3><p class="note"><span class="demo">Kaucja, protokół zdawczy, zasady wypowiedzenia… Sprawdź, czego nie może zabraknąć w Twojej umowie.</span></p><a class="more" href="#blog">Czytaj →</a></div>
@@ -298,7 +343,7 @@ table.price{border:22px solid transparent!important;border-image:url(img/rama.we
 </main>
 
 <section id="prywatnosc" class="alt"><div class="wrap"><h2>Polityka prywatności</h2><p class="demo">Administratorem danych osobowych jest LeanLoop s.c., ul. Jasieńska 12/3, 80-180 Gdańsk. Dane podane przy kontakcie lub rezerwacji przetwarzamy wyłącznie w celu odpowiedzi i realizacji usługi (art. 6 ust. 1 lit. b RODO). Masz prawo wglądu, poprawienia i usunięcia danych: kontakt@leanloop.pl. Strona nie używa plików cookies śledzących.</p></div></section>
-<footer><div class="wrap">© 2026 LeanLoop – Prawo i Podatki · <span class="demo">LeanLoop s.c. · NIP 584-000-00-00</span> · <a href="#prywatnosc">Polityka prywatności</a> <div class="credits">Zdjęcia: Pexels (licencja Pexels, bezpłatne użycie) – zdjęcia poglądowe.</div></div></footer>
+<footer><div class="wrap">© 2026 LeanLoop – Prawo i Podatki · <span class="demo">LeanLoop s.c. · NIP 584-000-00-00</span> · <a href="#prywatnosc">Polityka prywatności</a> <div class="credits">Zdjęcie Gdańska: Pexels (licencja Pexels).</div></div></footer>
 <script>(()=>{const H=document.querySelector("header"),n=document.getElementById("nav"),b=document.querySelector(".burger"),B=document.body,mq=matchMedia("(max-width:820px)");
 const s=()=>{const x=Math.round(H.getBoundingClientRect().height);document.documentElement.style.scrollPaddingTop=x-1+"px";document.documentElement.style.setProperty("--hh",x+"px")};s();addEventListener("resize",()=>{s();if(!mq.matches)c(false)});
 function c(o){B.classList.toggle("menu-open",o);b.setAttribute("aria-expanded",o);b.setAttribute("aria-label",o?"Zamknij menu":"Otwórz menu");n.inert=mq.matches&&!o}
